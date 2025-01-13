@@ -18,6 +18,18 @@ The robots use the following materials:
 
 All 3D printing and CAD files can be foud on my [Tinkercad](https://www.tinkercad.com/things/8u3FN7kBX82-fridge-magnet-robot-v5) page.
 
+## Assembly
+### Wheels
+To assemble the wheels, begin by laying our the magnets one by one. Press fit the magnets into the wheel and use some hot glue to secure it in place. When assembling, I alternated each magnet's pole from the one adjacent to it. The thinking here is the nearby magnets will pull on each other putting the wheel in compression instead of relying on adhesives to lock the magnets in place. I am not sure how much this effect actually mattered. Once the magnets are in place, the entire wheel can be covered in a thin layer of hot glue to make a grippy tread.
+### Chassis
+The two 3D printed chassis parts are glued together (refer to CAD) and the motors are fixed to the frame using bamboo skewers and hot glue. The only reason why I chose this method of securing the motors is because at the time, I did not have screws or bolts to build this robot. The CAD file can be easily modified to include these features.
+
 ## Software
+The main software challenges for this project was reverse engineering an old infrared remote to work with these robots. I used a remote from an old fan to control the robot. To find the codes that the remote was sending to the reciever, I used the arduino [IRremote](https://github.com/Arduino-IRremote/Arduino-IRremote) library and read the codes by using the RecieveDemo sketch. I used three buttons for movement: turn left, turn right, and move forward. Whenever the arduino recieves the input from the remote, it moves the motors appropriately to move in the desired dirction.
 
 ## Future Updates
+Some things I would like to improve about this robot is to make it stick to the fridge better. The robot works great on my fridge but when testing on other metal surfaces like doors and my friend's fridge, it kept on sliding down. I could improve this by getting stronger magnets, reducing the weight, or giving the tread of the wheels more grip.
+
+Another thing I would like to add to this robot are sensors. I would like to control the velocity of the motors that way the robot can move in a straight line instead of drifting off to one side. It also may be cool to add an accelerometer to be able to detect what direction the robot is facing so the robot can compesate for speed changes due to gravity when going up or down the fridge.
+
+I could also add more control to this robot by allowing the motors to spin in reverse. However, I like the limited motion that the robot has as it gives the driver more of a challenge.
