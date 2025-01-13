@@ -2,10 +2,15 @@
 
 ## Overview
 Refridgerator Magnet Robots are remote controlled robots that move around on the side of a fridge. I made this idea a reality last spring and I wanted to share my findings.
+![IMG_0293](https://github.com/user-attachments/assets/a680f437-6bfd-4f0e-873a-997280277a35)
+
 ## Design iterations
 There are several ideas and iterations I went through to get to the result. Originally, I had the idea to place magnets on the bottom of the chassis of the robot to allow for maximum surface area of the magnets. This design proved to be difficult to build because slight imperfections in the flatness of the robot lead to it getting high centered and the wheels not contacting the fridge. If better tolerances and machining were used, this design might work but it needs a lot of improvements.
+![image](https://github.com/user-attachments/assets/afc17502-60e0-4671-ab09-f64547d2372b)
 
 The next design I attempted to make were magnetic wheels. By placing magnets on the wheels, I took advantage of having a rolling contact joint between the wheel and the fridge. This means that assuming the wheel is in pure rotation, the magnets at the end of the wheel will instantaneously be static once they are in contact with the fridge. This improves the design because it allows the magnets to be closer to the fridge (giving them more force) while also reducing friction and the risk of getting high centered.
+![image](https://github.com/user-attachments/assets/6b90b6a1-280d-4130-945f-6b2bcfad6be8)
+
 ## Hardware
 The robots use the following materials:
 * small hobby gearmotors
@@ -33,3 +38,5 @@ Some things I would like to improve about this robot is to make it stick to the 
 Another thing I would like to add to this robot are sensors. I would like to control the velocity of the motors that way the robot can move in a straight line instead of drifting off to one side. It also may be cool to add an accelerometer to be able to detect what direction the robot is facing so the robot can compesate for speed changes due to gravity when going up or down the fridge.
 
 I could also add more control to this robot by allowing the motors to spin in reverse. However, I like the limited motion that the robot has as it gives the driver more of a challenge.
+
+![IMG_0292](https://github.com/user-attachments/assets/6c27759f-840b-47d7-8e4c-281340fbae92)
